@@ -151,8 +151,8 @@ li a:hover:not(.active){
   padding: 10px ;
   border: none;
   outline: 0;
-  color: #fff;
-  border-bottom: 1px solid #d63031;
+  color: #444;
+  font-size: 20px;
 }
 .contacto-form form button{
   background:#04aa6d;
@@ -164,6 +164,7 @@ li a:hover:not(.active){
 .contacto-form form button:hover{
     background:#333 ;
     color: #fff;
+    transition: background-color 0.5s ease-out;
 }
 .contacto-info{
   background: #444;
@@ -206,6 +207,11 @@ h2{
     border-radius: 20px;
     color: white;
 }
+.nosotros:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0, .5);
+  cursor:pointer;
+  transform: scale(1.01);
+}
 .nosotros__titulo{
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
@@ -218,6 +224,7 @@ h2{
     display: block;
     margin: 0px auto;
     width: 350px;
+    border-radius: 15px;
 
 }
 .ayudar {
@@ -228,6 +235,11 @@ h2{
     border-radius: 20px;
     color: white;
     display: inline-block;
+}
+.ayudar:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0, .5);
+  cursor:pointer;
+  transform: scale(1.01);
 }
 .ayudar__titulo{
     font-family: 'Oswald', sans-serif;
@@ -241,6 +253,8 @@ h2{
     display: block;
     margin: 0px auto;
     width: 350px;
+    border-radius: 15px;
+
 }
 .footer__derechos{
     font-family:'Oswald', sans-serif;
@@ -279,12 +293,19 @@ h2{
     width: 90px;
     height: 45px;
 }
+.btn1:hover{
+  transform: scale(1.2);
+}
 .btn2{
     background:#04aa6d;
     color: #fff;
     border: 0;
     text-transform: uppercase;
     padding: 10px;
+}
+.btn2:hover{
+  transition: background-color 0.4s ease-out;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0, .3);
 }
 .donaciones__textos{
     font-family: 'Oswald', sans-serif;
