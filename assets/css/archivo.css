@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Raleway:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+/* MENU */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li:last-child{
+    border-right: none;
+}
+
+li a {
+  font-family: 'Oswald', sans-serif;
+  display: block;
+  padding: 8px;
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+li a:hover:not(.active){
+    background-color:#666;
+}
+.active{
+    background-color: #04aa6d;
+}
+/* GRILLAS */
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto 200px auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "aside aside aside aside aside"
+                        "footer footer footer footer footer";
+}
+.contenedor-index{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+.contenedor-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+.contenedor-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+.contenedor-donar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+/* AREAS */
+.navegador{
+  grid-area: nav;
+}
+.principal{
+  grid-area: main;
+}
+.secundario{
+  grid-area: aside;
+  background: #d63031;
+}
+.pie{
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  background-color: #04aa6d;
+}
+/*------------------------------------------------*/
+.principal .carrousel{
+  max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.principal .info-cards{
+  display: flex;
+  justify-content: center;
+}
+.principal .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info-donar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contenedor-contacto{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.contacto-cuadro{
+  box-shadow: 0 0 20px 0 rgba(0,0,0, .3);
+  
+}
+.contacto-form{
+  background:#62b48c;
+}
+.contacto-form form{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contacto-form form .block{
+  grid-column: 1/3;
+}
+.contacto-form form p{
+  margin: 0px;
+  padding: 30px;
+}
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea{
+  width: 100%;
+  padding: 10px ;
+  border: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
+}
+.contacto-form form button{
+  background:#04aa6d;
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.contacto-form form button:hover{
+    background:#333 ;
+    color: #fff;
+}
+.contacto-info{
+  background: #444;
+  color: #fff;
+}
+.contacto-info h4,
+.contacto-info p{
+  text-align: center;
+  margin: 0 0 1rem 0;
+  padding: 5px;
+  font-size: 15px;
+}
+
+main{
+    padding: 20px;
+    background-color: #56dd9c;
+}
+footer{
+    padding: 15px;
+}
+h2{
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.derechos{
+    font-family: 'Oswald', sans-serif;
+}
+.cards-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nosotros {
+    background-color: #04aa6d;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+}
+.nosotros__titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+.nosotros__desc{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+.nosotros__img{
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+
+}
+.ayudar {
+    background-color: #04aa6d;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+}
+.ayudar__titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+.ayudar__desc{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+.ayudar__img{
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+}
+.footer__derechos{
+    font-family:'Oswald', sans-serif;
+    margin-right: 30px;
+}
+.imgInicio{
+    background-image: url(../img/carrusel1a.jpg) ;
+    height: 700px;
+    /*background-size:cover;*/
+}
+.contacto__form{
+    padding: 20px;
+    background-color: #56dd9c;
+}
+  
+.donaciones{
+
+    /*width: 600px;*/
+    margin: 20px;
+    padding: 15px;
+    background:#62b48c;
+    border-radius: 20px;
+}
+.btn{
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    
+}
+.btn:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+.btn1{
+    width: 90px;
+    height: 45px;
+}
+.btn2{
+    background:#04aa6d;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.donaciones__textos{
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    color: white;
+
+}
+.donaciones__siguiente{
+    text-align: right;
+}
+
+@media (min-width: 700px) {
+  .contacto-cuadro{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  aside"
+                        "footer footer footer footer footer";
+    
+  }
+  .donaciones{
+
+    width: 600px;
+    margin: 20px;
+    padding: 15px;
+    background:#62b48c;
+    border-radius: 20px;
+}
+
+}
