@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Raleway:wght@300&display=swap');
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* MENU */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $colorPrimario;
+  li{
+      float: left;
+      border-right: 1px solid #bbb;
+      &:last-child{
+        border-right: none;
+      }
+      a{
+        font-family: 'Oswald', sans-serif;
+        display: block;
+        padding: 8px;
+        text-align: center;
+        color: $colorFuente;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        &:hover:not(.active){
+            background-color: $colorTerciario;
+            color: $colorFuente;
+        }
+      }
+  }
+}
+
+.active{
+    background-color: $colorSecundario;
+}
+/* GRILLAS */
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+.contenedor-index{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+.contenedor-us{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+.contenedor-contact{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+}
+
+/* AREAS */
+.navegador{
+  grid-area: nav;
+}
+.principal{
+  grid-area: main;
+}
+.secundario{
+  grid-area: aside;
+  background: #d63031;
+}
+.pie{
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  background-color: $colorSecundario;
+  color: $colorFuente;
+  font-size: 20px;
+}
+/*------------------------------------------------*/
+/*.principal*/ .carr-cont{
+  max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.principal .info-cards{
+  display: flex;
+  justify-content: center;
+}
+.principal .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.info-donar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contenedor-contacto{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.contacto-cuadro{
+  box-shadow: 0 0 20px 0 rgba(0,0,0, .3);
+  
+}
+.contacto-form{
+  background:$colorTerciario;
+}
+.contacto-form form{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contacto-form form .block{
+  grid-column: 1/3;
+}
+.contacto-form form p{
+  margin: 0px;
+  padding: 30px;
+}
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea{
+  width: 100%;
+  padding: 10px ;
+  border: none;
+  outline: 0;
+  color: #444;
+  font-size: 20px;
+}
+.contacto-form form button{
+  background: $colorPrimario;
+  color: $colorFuente;
+  border: 0;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.contacto-form form button:hover{
+    background:#333 ;
+    color: $colorFuente;
+    transition: background-color 0.5s ease-out;
+}
+.contacto-info{
+  background: $colorPrimario;
+  color: #fff;
+}
+.contacto-info h4,
+.contacto-info p{
+  text-align: center;
+  margin: 0 0 1rem 0;
+  padding: 5px;
+  font-size: 15px;
+}
+
+main{
+    padding: 20px;
+    background-color: $colorTerciario;
+}
+footer{
+    padding: 15px;
+}
+h2{
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+    color: $colorFuente;
+    font-size: 30px;
+    text-shadow: black 0.1em 0.1em 0.2em
+
+}
+.derechos{
+    font-family: 'Oswald', sans-serif;
+}
+.cards-nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ayudar {
+    background-color: #04aa6d;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+}
+.ayudar:hover{
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0, .5);
+  cursor:pointer;
+  transform: scale(1.01);
+}
+.ayudar__titulo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-shadow: black 0.01em 0.01em 0.2em
+
+}
+.ayudar__desc{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-shadow: black 0.01em 0.01em 0.2em
+
+}
+.ayudar__img{
+    display: block;
+    margin: 0px auto;
+    width: 350px;
+    border-radius: 15px;
+
+}
+.footer__derechos{
+    font-family:'Oswald', sans-serif;
+    margin-right: 30px;
+}
+.imgInicio{
+    background-image: url(../img/carrusel1a.jpg) ;
+    height: 700px;
+    /*background-size:cover;*/
+}
+.contacto__form{
+    padding: 20px;
+    background-color: #56dd9c;
+}
+.tarjetas{
+    color: $colorFuente;
+    .tarjeta-us{
+      background-color: $colorSecundario;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px;
+    }
+}
+.faq{
+    font-family: 'Oswald', sans-serif;
+    /*max-width: 600px;*/
+    margin: 20px;
+    padding: 15px;
+    background-color:$colorSecundario;
+    border-radius: 10px;
+    .fa-house{
+        font-size: 50px;
+        padding: 15px;
+        margin: 10px;
+    }
+    h4{
+        font-size: 20px;
+        color: #111;
+    }
+    p{
+        font-size: 18px;
+        color: white;
+    }
+    ul{
+        background-color: $colorSecundario;
+        li{
+        color: white;
+        font-size: 18px;
+        border: 0;
+        float: none;
+    }
+}
+} 
+.donaciones{
+    font-family: 'Oswald', sans-serif;
+    /*max-width: 600px;*/
+    margin: 20px;
+    padding: 15px;
+    background-color:$colorSecundario;
+    border-radius: 10px;
+    justify-content: center;
+    .donar_texto{
+        padding: 10px;
+        color: white;
+        h5{
+            font-size: 26px;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+    .donar_botones{
+        .pesos{
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            border: 0;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 25px;
+            font-weight: 400;
+            &:hover{
+                background-color: #ddd;
+                
+            }
+        }
+        
+    }
+}
+.btn{
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    
+}
+.btn:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+.btn1{
+    width: 90px;
+    height: 45px;
+}
+.btn1:hover{
+  transform: scale(1.2);
+}
+.btn2{
+    background:#04aa6d;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.btn2:hover{
+  transition: background-color 0.4s ease-out;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0, .3);
+}
+
+@media (min-width: 700px) {
+  .contacto-cuadro{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main"
+                        "footer footer footer footer footer";
+    
+  }
+  
+}
+
+.imagenFondo{
+  background-image: url(../img/carousel3.jpg);
+}
+.fa-computer-mouse{
+  font-size: 48px;
+}
+.card-us{
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+.card-us .card-body{
+  background-color: $colorSecundario;
+  color: $colorFuente;
+  }
