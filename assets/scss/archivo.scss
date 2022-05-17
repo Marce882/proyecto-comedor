@@ -1,43 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Raleway:wght@300&display=swap');
+@import "_cfg";
 @import "_variables";
+@import "_menu";
+@import "_footer";
+@import "_botones";
 
-* {
-    margin: 0;
-    padding: 0;
-}
 /* MENU */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: $colorPrimario;
-  li{
-      float: left;
-      border-right: 1px solid #bbb;
-      &:last-child{
-        border-right: none;
-      }
-      a{
-        font-family: 'Oswald', sans-serif;
-        display: block;
-        padding: 8px;
-        text-align: center;
-        color: $colorFuente;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 24px;
-        &:hover:not(.active){
-            background-color: $colorTerciario;
-            color: $colorFuente;
-        }
-      }
-  }
-}
 
-.active{
-    background-color: $colorSecundario;
-}
 /* GRILLAS */
 .contenedor{
   display: grid;
@@ -179,9 +148,7 @@ main{
     padding: 20px;
     background-color: $colorTerciario;
 }
-footer{
-    padding: 15px;
-}
+
 h2{
     font-family:'Oswald', sans-serif;
     text-align: center;
@@ -230,10 +197,6 @@ h2{
     width: 350px;
     border-radius: 15px;
 
-}
-.footer__derechos{
-    font-family:'Oswald', sans-serif;
-    margin-right: 30px;
 }
 .imgInicio{
     background-image: url(../img/carrusel1a.jpg) ;
@@ -325,29 +288,30 @@ h2{
     font-family: 'Oswald', sans-serif;
     font-weight: 800;
     font-size: 24px;
+    &:hover{
+      background-color: #666;
+      cursor: pointer;
+  }
     
 }
-.btn:hover{
-    background-color: #666;
-    cursor: pointer;
-}
-.btn1{
+/*.boton1{
+    margin: 5px;
     width: 90px;
     height: 45px;
-}
-.btn1:hover{
-  transform: scale(1.2);
-}
+    &:hover{
+      transform: scale(1.2);
+    }
+}*/
 .btn2{
     background:#04aa6d;
     color: #fff;
     border: 0;
     text-transform: uppercase;
     padding: 10px;
-}
-.btn2:hover{
-  transition: background-color 0.4s ease-out;
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0, .3);
+    &:hover{
+      transition: background-color 0.4s ease-out;
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0, .3);
+    }
 }
 
 @media (min-width: 700px) {

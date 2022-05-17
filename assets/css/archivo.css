@@ -1,26 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Raleway:wght@300&display=swap");
-/*$colorPrimario: #42506b;
-$colorSecundario: #ef4b4c;
-$colorTerciario: #3e619b;
-$colorFuente: #e9e9eb;*/
-/*$colorPrimario: #fa4753;
-$colorSecundario: #17181c;
-$colorTerciario: #ffffff;
-$colorFuente: #9ba5c9;*/
-/*$colorPrimario: #ff6d00;
-$colorSecundario: #ff9201;
-$colorTerciario: #ffab41;
-$colorFuente: #ffffff;*/
-/*$colorPrimario: #fd6b5b;
-$colorSecundario: #076473;
-$colorTerciario: #cddfcf;
-$colorFuente: #fafafa;*/
 * {
   margin: 0;
   padding: 0;
 }
 
-/* MENU */
 ul {
   list-style-type: none;
   margin: 0;
@@ -58,6 +41,69 @@ ul li a:hover:not(.active) {
   background-color: #339476;
 }
 
+footer {
+  padding: 15px;
+}
+
+.footer__derechos {
+  font-family: 'Oswald', sans-serif;
+  margin-right: 30px;
+}
+
+.boton, .boton1, .boton2 {
+  border: 0;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.boton1 {
+  margin: 10px;
+}
+
+.boton1:hover {
+  transform: scale(1.1);
+}
+
+.boton2 {
+  margin: 5px;
+  font-size: 22px;
+}
+
+.btn {
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.btn:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+/*.boton1{
+    margin: 5px;
+    width: 90px;
+    height: 45px;
+    &:hover{
+      transform: scale(1.2);
+    }
+}*/
+.btn2 {
+  background: #04aa6d;
+  color: #fff;
+  border: 0;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.btn2:hover {
+  transition: background-color 0.4s ease-out;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* MENU */
 /* GRILLAS */
 .contenedor {
   display: grid;
@@ -213,10 +259,6 @@ main {
   background-color: #87e1c7;
 }
 
-footer {
-  padding: 15px;
-}
-
 h2 {
   font-family: 'Oswald', sans-serif;
   text-align: center;
@@ -268,11 +310,6 @@ h2 {
   margin: 0px auto;
   width: 350px;
   border-radius: 15px;
-}
-
-.footer__derechos {
-  font-family: 'Oswald', sans-serif;
-  margin-right: 30px;
 }
 
 .imgInicio {
@@ -384,15 +421,14 @@ h2 {
   cursor: pointer;
 }
 
-.btn1 {
-  width: 90px;
-  height: 45px;
-}
-
-.btn1:hover {
-  transform: scale(1.2);
-}
-
+/*.boton1{
+    margin: 5px;
+    width: 90px;
+    height: 45px;
+    &:hover{
+      transform: scale(1.2);
+    }
+}*/
 .btn2 {
   background: #04aa6d;
   color: #fff;

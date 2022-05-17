@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $colorPrimario;
+    li{
+        float: left;
+        border-right: 1px solid #bbb;
+        &:last-child{
+          border-right: none;
+        }        
+        a{
+          font-family: 'Oswald', sans-serif;
+          display: block;
+          padding: 8px;
+          text-align: center;
+          color: $colorFuente;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 24px;
+          &:hover:not(.active){
+              background-color: $colorTerciario;
+              color: $colorFuente;
+          }
+        }
+    }
+  }
+  
+  .active{
+      background-color: $colorSecundario;
+  }

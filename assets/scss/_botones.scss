@@ -1,0 +1,49 @@
+.boton{
+    border: map-get($boton , bordes);
+    padding: map-get($boton, padding);
+    border-radius: map-get($boton, radio);
+    width: map-get($boton, ancho);
+}
+.boton1{
+    @extend .boton;
+    margin: 10px;
+    &:hover{
+      transform: scale(1.1);
+    }
+}
+.boton2{
+    @extend .boton;
+    margin: 5px;
+    font-size: 22px;
+    
+}
+.btn{
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    &:hover{
+      background-color: #666;
+      cursor: pointer;
+  }
+    
+}
+/*.boton1{
+    margin: 5px;
+    width: 90px;
+    height: 45px;
+    &:hover{
+      transform: scale(1.2);
+    }
+}*/
+.btn2{
+    background:#04aa6d;
+    color: #fff;
+    border: 0;
+    text-transform: uppercase;
+    padding: 10px;
+    &:hover{
+      transition: background-color 0.4s ease-out;
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0, .3);
+    }
+}
