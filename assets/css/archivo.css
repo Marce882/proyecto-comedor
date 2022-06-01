@@ -2,14 +2,19 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/*$colorPrimario: #21605d;
+$colorSecundario: #339476;
+$colorTerciario: #87e1c7;
+$colorFuente: #eaebed;*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #21605d;
+  background-color: #2d8d79;
 }
 
 ul li {
@@ -33,12 +38,12 @@ ul li a {
 }
 
 ul li a:hover:not(.active) {
-  background-color: #87e1c7;
+  background-color: #8fc79a;
   color: #eaebed;
 }
 
 .active {
-  background-color: #339476;
+  background-color: #5e9387;
 }
 
 footer {
@@ -143,7 +148,7 @@ footer {
   grid-area: footer;
   display: flex;
   justify-content: space-between;
-  background-color: #339476;
+  background-color: #5e9387;
   color: #eaebed;
   font-size: 20px;
 }
@@ -191,7 +196,7 @@ footer {
 }
 
 .contacto-form {
-  background: #87e1c7;
+  background: #8fc79a;
 }
 
 .contacto-form form {
@@ -220,7 +225,7 @@ footer {
 }
 
 .contacto-form form button {
-  background: #21605d;
+  background: #2d8d79;
   color: #eaebed;
   border: 0;
   text-transform: uppercase;
@@ -234,7 +239,7 @@ footer {
 }
 
 .contacto-info {
-  background: #21605d;
+  background: #2d8d79;
   color: #fff;
 }
 
@@ -243,12 +248,12 @@ footer {
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 5px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 main {
   padding: 20px;
-  background-color: #87e1c7;
+  background-color: #8fc79a;
 }
 
 h2 {
@@ -316,14 +321,21 @@ h2 {
 }
 
 .tarjetas {
+  font-family: 'Oswald', sans-serif;
   color: #eaebed;
+  font-size: 20px;
 }
 
 .tarjetas .tarjeta-us {
-  background-color: #339476;
-  padding: 10px;
-  border-radius: 5px;
+  background-color: #5e9387;
+  padding: 15px;
+  border-radius: 10px;
   margin: 10px;
+}
+
+.tarjetas .titulo {
+  padding: 10px;
+  text-align: center;
 }
 
 .faq {
@@ -331,7 +343,7 @@ h2 {
   /*max-width: 600px;*/
   margin: 20px;
   padding: 15px;
-  background-color: #339476;
+  background-color: #5e9387;
   border-radius: 10px;
 }
 
@@ -352,7 +364,7 @@ h2 {
 }
 
 .faq ul {
-  background-color: #339476;
+  background-color: #5e9387;
 }
 
 .faq ul li {
@@ -367,7 +379,7 @@ h2 {
   /*max-width: 600px;*/
   margin: 20px;
   padding: 15px;
-  background-color: #339476;
+  background-color: #5e9387;
   border-radius: 10px;
   justify-content: center;
 }
@@ -461,7 +473,7 @@ h2 {
 }
 
 .card-us .card-body {
-  background-color: #339476;
+  background-color: #5e9387;
   color: #eaebed;
 }
 /*# sourceMappingURL=archivo.css.map */

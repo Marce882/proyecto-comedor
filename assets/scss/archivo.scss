@@ -141,7 +141,7 @@
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 5px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 main{
@@ -208,12 +208,18 @@ h2{
     background-color: #56dd9c;
 }
 .tarjetas{
-    color: $colorFuente;
+  font-family: 'Oswald', sans-serif;
+  color: $colorFuente;
+  font-size: 20px;
     .tarjeta-us{
       background-color: $colorSecundario;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 15px;
+      border-radius: 10px;
       margin: 10px;
+    }
+    .titulo{
+      padding: 10px;
+      text-align: center;
     }
 }
 .faq{
