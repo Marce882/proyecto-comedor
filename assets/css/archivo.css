@@ -46,13 +46,48 @@ ul li a:hover:not(.active) {
   background-color: #5e9387;
 }
 
-footer {
-  padding: 15px;
+.newfooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #5e9387;
+  color: #eaebed;
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
 }
 
-.footer__derechos {
-  font-family: 'Oswald', sans-serif;
-  margin-right: 30px;
+.newfooter h4 {
+  font-size: 23px;
+  padding: 5px;
+}
+
+.newfooter__derechos {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.newfooter__redes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.newfooter__redes a {
+  text-decoration: none;
+  color: #eaebed;
+}
+
+.newfooter__redes a img {
+  margin-right: 9px;
+}
+
+.newfooter__contacto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .boton, .boton1, .boton2 {
@@ -102,13 +137,13 @@ footer {
 
 /* MENU */
 /* GRILLAS */
-.contenedor {
+/*.contenedor{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "nav   nav   nav   nav   nav" "main  main  main  main  main" "footer footer footer footer footer";
-}
-
+  grid-template-rows: auto auto;
+  grid-template-areas:  "nav   nav   nav   nav   nav"
+                        "main  main  main  main  main";
+}*/
 .contenedor-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -456,6 +491,9 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "nav   nav   nav   nav   nav" "main  main  main  main  main" "footer footer footer footer footer";
+  }
+  .newfooter {
+    flex-direction: row;
   }
 }
 

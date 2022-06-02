@@ -1,7 +1,37 @@
-footer{
-    padding: 15px;
-}
-.footer__derechos{
+.newfooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $colorSecundario;
+    color: $colorFuente;
+    padding: 10px;
+    font-size: 18px;
     font-family:'Oswald', sans-serif;
-    margin-right: 30px;
+        h4{
+            font-size: 23px;
+            padding: 5px;
+        }
+   }
+.newfooter__derechos{
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
+.newfooter__redes{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    a {
+        text-decoration: none;
+        color: $colorFuente;
+        img {
+            margin-right: 9px;
+        }
+    }
+}
+.newfooter__contacto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
