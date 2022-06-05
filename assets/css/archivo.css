@@ -211,6 +211,10 @@ ul li a:hover:not(.active) {
   justify-content: space-evenly;
 }
 
+.card-title {
+  text-align: center;
+}
+
 .info-donar {
   display: flex;
   flex-wrap: wrap;
@@ -382,9 +386,9 @@ h2 {
   border-radius: 10px;
 }
 
-.faq .fa-house {
-  font-size: 50px;
-  padding: 15px;
+.faq .fa-circle-check {
+  font-size: 30px;
+  padding: 20px;
   margin: 10px;
 }
 

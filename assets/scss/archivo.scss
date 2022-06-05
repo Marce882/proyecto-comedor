@@ -78,6 +78,9 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.card-title{
+  text-align: center;
+}
 .info-donar{
   display: flex;
   flex-wrap: wrap;
@@ -228,11 +231,11 @@ h2{
     padding: 15px;
     background-color:$colorSecundario;
     border-radius: 10px;
-    .fa-house{
-        font-size: 50px;
-        padding: 15px;
-        margin: 10px;
-    }
+    .fa-circle-check{
+      font-size: 30px;
+      padding: 20px;
+      margin: 10px;
+  }
     h4{
         font-size: 20px;
         color: #111;
